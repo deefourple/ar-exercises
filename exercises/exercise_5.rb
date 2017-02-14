@@ -8,3 +8,10 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+@sum = Store.sum("annual_revenue")
+puts "Sum: #{@sum}"
+@store_count = Store.count
+puts "Stores: #{@store_count}"
+@average = @sum / @store_count
+puts "Average Revenue: #{@average}"
