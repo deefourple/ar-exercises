@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+askUser = "Please provide a name for your store"
+puts askUser
+answer = gets.chomp
+store = Store.new(name: answer, annual_revenue: 200000)
+  unless store.save
+    puts "Error #{store.errors.messages}"
+  end
